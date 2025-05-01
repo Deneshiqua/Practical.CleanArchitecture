@@ -89,4 +89,10 @@ public static class PersistenceExtensions
         var context = serviceScope.ServiceProvider.GetRequiredService<OpenIddictDbContext>();
         context.Database.Migrate();
     }
+    public static void MigrateAdsDb(this IHost app)
+    {
+        using var serviceScope = app.Services.GetService<IServiceScopeFactory>().CreateScope();
+        var context = serviceScope.ServiceProvider.GetRequiredService<AdsDbContext>();
+        context.Database.Migrate();
+    }
 }

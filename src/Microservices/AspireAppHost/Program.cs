@@ -20,7 +20,9 @@ var graphQlGateway = builder.AddProject<Projects.ClassifiedAds_Gateways_GraphQL>
 var apiGateway = builder.AddProject<Projects.ClassifiedAds_Gateways_WebAPI>("ClassifiedAds-Gateways-WebAPI");
 
 
+//var identityServer = builder
+//    .AddExecutable("ClassifiedAds-IdentityServer", "dotnet", "../../IdentityServer/OpenIddict/ClassifiedAds.IdentityServer", "run", $"--urls=https://localhost:44367");
 var identityServer = builder
-    .AddExecutable("ClassifiedAds-IdentityServer", "dotnet", "../../IdentityServer/OpenIddict/ClassifiedAds.IdentityServer", "run", $"--urls=https://localhost:44367");
+    .AddExecutable("ClassifiedAds-IdentityServer", "dotnet", "../../IdentityServer/Duende/ClassifiedAds.IdentityServer", "run", $"--urls=https://localhost:44367");
 
 builder.Build().Run();

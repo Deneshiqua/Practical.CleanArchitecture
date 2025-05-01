@@ -16,6 +16,11 @@ public class ApiScopeController : Controller
         _configurationDbContext = configurationDbContext;
     }
 
+    public IActionResult Index()
+    {
+        var apis = _configurationDbContext.ApiScopes.ToList();
+        return View(apis);
+    }
     public IActionResult Scopes(int id)
     {
         var api = _configurationDbContext.ApiScopes

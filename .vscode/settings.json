@@ -1,0 +1,12 @@
+{
+    "favorites.resources": [
+        {
+            "filePath": "src\\Microservices",
+            "group": "Default"
+        },
+        {
+            "filePath": "src\\IdentityServer\\OpenIddict",
+            "group": "Default"
+        }
+    ]
+}

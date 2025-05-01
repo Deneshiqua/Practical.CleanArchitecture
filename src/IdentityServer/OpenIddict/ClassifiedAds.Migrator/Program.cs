@@ -26,6 +26,7 @@ var builder = Host.CreateDefaultBuilder(args)
 
     services.AddDbContext<OpenIddictDbContext>(options =>
     {
+        var connectionString = configuration["ConnectionStrings:IdentityServer"];
         options.UseSqlServer(configuration["ConnectionStrings:IdentityServer"], sql =>
         {
             sql.MigrationsAssembly(Assembly.GetExecutingAssembly().GetName().Name);
@@ -34,6 +35,14 @@ var builder = Host.CreateDefaultBuilder(args)
         // Register the entity sets needed by OpenIddict.
         options.UseOpenIddict();
     });
+    //services.AddDbContext<AdsDbContext>(options =>
+    //{
+    //    var connectionString = configuration["ConnectionStrings:ClassifiedAds"];
+    //    options.UseSqlServer(configuration["ConnectionStrings:ClassifiedAds"], sql =>
+    //    {
+    //        sql.MigrationsAssembly(Assembly.GetExecutingAssembly().GetName().Name);
+    //    });
+    //});
 });
 
 var app = builder.Build();
@@ -49,16 +58,30 @@ Policy.Handle<Exception>().WaitAndRetry(
 {
     app.MigrateOpenIddictDb();
 
-    var upgrader = DeployChanges.To
+    var openIddictUpgrader = DeployChanges.To
     .SqlDatabase(configuration.GetConnectionString("IdentityServer"))
     .WithScriptsEmbeddedInAssembly(Assembly.GetExecutingAssembly())
     .LogToConsole()
     .Build();
 
-    var result = upgrader.PerformUpgrade();
+    var openIddictResult = openIddictUpgrader.PerformUpgrade();
 
-    if (!result.Successful)
+    if (!openIddictResult.Successful)
     {
-        throw result.Error;
+        throw openIddictResult.Error;
     }
+
+    //app.MigrateAdsDb();
+    //var migrateAdsUpgrader = DeployChanges.To
+    //.SqlDatabase(configuration.GetConnectionString("ClassifiedAds"))
+    //.WithScriptsEmbeddedInAssembly(Assembly.GetExecutingAssembly())
+    //.LogToConsole()
+    //.Build();
+
+    //var migrateAdsResult = migrateAdsUpgrader.PerformUpgrade();
+
+    //if (!migrateAdsResult.Successful)
+    //{
+    //    throw migrateAdsResult.Error;
+    //}
 });
