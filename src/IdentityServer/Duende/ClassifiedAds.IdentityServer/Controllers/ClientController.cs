@@ -162,10 +162,13 @@ public class ClientController : Controller
         var identityResources = _configurationDbContext.IdentityResources
             .Select(x => x.Name).ToList();
 
-        var apiScopes = _configurationDbContext.ApiResources
+        var apiResourceScopes = _configurationDbContext.ApiResources
             .Select(x => x.Name).ToList();
 
-        var scopes = identityResources.Concat(apiScopes).ToList();
+        var apiScopes = _configurationDbContext.ApiScopes
+            .Select(x => x.Name).ToList();
+
+        var scopes = identityResources.Concat(apiScopes).Concat(apiResourceScopes).ToList();
 
         return Ok(scopes);
     }
