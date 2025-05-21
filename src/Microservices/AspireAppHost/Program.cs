@@ -5,8 +5,8 @@ var auditLogGrpc = builder.AddProject<Projects.ClassifiedAds_Services_AuditLog_G
 
 var configurationApi = builder.AddProject<Projects.ClassifiedAds_Services_Configuration_Api>("ClassifiedAds-Services-Configuration-Api");
 
-var identityApi = builder.AddProject<Projects.ClassifiedAds_Services_Identity_Api>("ClassifiedAds-Services-Identity-Api");
-var identityGrpc = builder.AddProject<Projects.ClassifiedAds_Services_Identity_Grpc>("ClassifiedAds-Services-Identity-Grpc");
+//var identityApi = builder.AddProject<Projects.ClassifiedAds_Services_Identity_Api>("ClassifiedAds-Services-Identity-Api");
+//var identityGrpc = builder.AddProject<Projects.ClassifiedAds_Services_Identity_Grpc>("ClassifiedAds-Services-Identity-Grpc");
 
 var notificationApi = builder.AddProject<Projects.ClassifiedAds_Services_Notification_Api>("ClassifiedAds-Services-Notification-Api");
 var notificationGrpc = builder.AddProject<Projects.ClassifiedAds_Services_Notification_Grpc>("ClassifiedAds-Services-Notification-Grpc");
@@ -22,7 +22,14 @@ var apiGateway = builder.AddProject<Projects.ClassifiedAds_Gateways_WebAPI>("Cla
 
 //var identityServer = builder
 //    .AddExecutable("ClassifiedAds-IdentityServer", "dotnet", "../../IdentityServer/OpenIddict/ClassifiedAds.IdentityServer", "run", $"--urls=https://localhost:44367");
+//var identityServer = builder
+//    .AddExecutable("ClassifiedAds-IdentityServer", "dotnet", "../../IdentityServer/Duende/ClassifiedAds.IdentityServer", "run", $"--urls=https://localhost:44367");
+
 var identityServer = builder
-    .AddExecutable("ClassifiedAds-IdentityServer", "dotnet", "../../IdentityServer/Duende/ClassifiedAds.IdentityServer", "run", $"--urls=https://localhost:44367");
+    .AddExecutable("ClassifiedAds-IdentityServer", "dotnet", "../../IdentityServer/Skoruba/Skoruba.Duende.IdentityServer.Admin", "run", $"--urls=https://localhost:44303");
+var identityServerApi = builder
+    .AddExecutable("ClassifiedAds-IdentityServerApi", "dotnet", "../../IdentityServer/Skoruba/Skoruba.Duende.IdentityServer.Admin.Api", "run", $"--urls=https://localhost:44302");
+var identityServerUi = builder
+    .AddExecutable("ClassifiedAds-IdentityServerUi", "dotnet", "../../IdentityServer/Skoruba/Skoruba.Duende.IdentityServer.STS.Identity", "run", $"--urls=https://localhost:44310");
 
 builder.Build().Run();

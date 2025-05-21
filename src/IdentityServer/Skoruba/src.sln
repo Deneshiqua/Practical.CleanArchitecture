@@ -1,0 +1,126 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Skoruba.Duende.IdentityServer.Admin", "Skoruba.Duende.IdentityServer.Admin\Skoruba.Duende.IdentityServer.Admin.csproj", "{FEBC44C1-8697-870F-45CE-719910E3ABCD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Skoruba.Duende.IdentityServer.Admin.Api", "Skoruba.Duende.IdentityServer.Admin.Api\Skoruba.Duende.IdentityServer.Admin.Api.csproj", "{5C6C057C-94F9-2B6F-AD27-32C04C478534}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Skoruba.Duende.IdentityServer.Admin.BusinessLogic", "Skoruba.Duende.IdentityServer.Admin.BusinessLogic\Skoruba.Duende.IdentityServer.Admin.BusinessLogic.csproj", "{F29B7787-35AE-C413-5E25-FE7C2A4DC754}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Skoruba.Duende.IdentityServer.Admin.BusinessLogic.Identity", "Skoruba.Duende.IdentityServer.Admin.BusinessLogic.Identity\Skoruba.Duende.IdentityServer.Admin.BusinessLogic.Identity.csproj", "{6083A6BB-987C-AD29-06A8-13E2B7BE5FFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Skoruba.Duende.IdentityServer.Admin.BusinessLogic.Shared", "Skoruba.Duende.IdentityServer.Admin.BusinessLogic.Shared\Skoruba.Duende.IdentityServer.Admin.BusinessLogic.Shared.csproj", "{B3500C72-864B-2BA3-A5BF-90CE4C4B0E64}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Skoruba.Duende.IdentityServer.Admin.EntityFramework", "Skoruba.Duende.IdentityServer.Admin.EntityFramework\Skoruba.Duende.IdentityServer.Admin.EntityFramework.csproj", "{42BF9D95-BB99-1C16-EA6A-417C47BA3CF6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Skoruba.Duende.IdentityServer.Admin.EntityFramework.Configuration", "Skoruba.Duende.IdentityServer.Admin.EntityFramework.Configuration\Skoruba.Duende.IdentityServer.Admin.EntityFramework.Configuration.csproj", "{AE453464-60B9-5B63-63F4-392CB719E86D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Skoruba.Duende.IdentityServer.Admin.EntityFramework.Extensions", "Skoruba.Duende.IdentityServer.Admin.EntityFramework.Extensions\Skoruba.Duende.IdentityServer.Admin.EntityFramework.Extensions.csproj", "{538B63E9-D220-2312-E586-59CB9D46A8E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Skoruba.Duende.IdentityServer.Admin.EntityFramework.Identity", "Skoruba.Duende.IdentityServer.Admin.EntityFramework.Identity\Skoruba.Duende.IdentityServer.Admin.EntityFramework.Identity.csproj", "{C0E06356-0501-49C4-2D17-28AC97C34ED2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Skoruba.Duende.IdentityServer.Admin.EntityFramework.MySql", "Skoruba.Duende.IdentityServer.Admin.EntityFramework.MySql\Skoruba.Duende.IdentityServer.Admin.EntityFramework.MySql.csproj", "{035187CA-B29F-AB4F-CB8D-E77D37BFB453}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Skoruba.Duende.IdentityServer.Admin.EntityFramework.PostgreSQL", "Skoruba.Duende.IdentityServer.Admin.EntityFramework.PostgreSQL\Skoruba.Duende.IdentityServer.Admin.EntityFramework.PostgreSQL.csproj", "{FFFC042B-1F94-E910-8AC7-3485835689BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Skoruba.Duende.IdentityServer.Admin.EntityFramework.Shared", "Skoruba.Duende.IdentityServer.Admin.EntityFramework.Shared\Skoruba.Duende.IdentityServer.Admin.EntityFramework.Shared.csproj", "{5E37C4C8-3D29-088E-CA8A-CA09C800983B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Skoruba.Duende.IdentityServer.Admin.EntityFramework.SqlServer", "Skoruba.Duende.IdentityServer.Admin.EntityFramework.SqlServer\Skoruba.Duende.IdentityServer.Admin.EntityFramework.SqlServer.csproj", "{8F7091CC-AAD5-41DC-E3A6-3A2150AB60D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Skoruba.Duende.IdentityServer.Admin.UI", "Skoruba.Duende.IdentityServer.Admin.UI\Skoruba.Duende.IdentityServer.Admin.UI.csproj", "{EDE65EBE-BB98-B4E7-C83C-A9068FDCC1F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Skoruba.Duende.IdentityServer.Admin.UI.Api", "Skoruba.Duende.IdentityServer.Admin.UI.Api\Skoruba.Duende.IdentityServer.Admin.UI.Api.csproj", "{57FC7800-4DCB-D817-CA9E-9A1D36332FD8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Skoruba.Duende.IdentityServer.Shared", "Skoruba.Duende.IdentityServer.Shared\Skoruba.Duende.IdentityServer.Shared.csproj", "{3B2CE8AD-D354-F645-6EBE-F2F935DE3A41}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Skoruba.Duende.IdentityServer.Shared.Configuration", "Skoruba.Duende.IdentityServer.Shared.Configuration\Skoruba.Duende.IdentityServer.Shared.Configuration.csproj", "{F007801F-B0A9-3212-1EE6-E8FDC282B77F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Skoruba.Duende.IdentityServer.STS.Identity", "Skoruba.Duende.IdentityServer.STS.Identity\Skoruba.Duende.IdentityServer.STS.Identity.csproj", "{F1794F8E-B2CE-BE4A-72C9-CA8E60B157E0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FEBC44C1-8697-870F-45CE-719910E3ABCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEBC44C1-8697-870F-45CE-719910E3ABCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEBC44C1-8697-870F-45CE-719910E3ABCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEBC44C1-8697-870F-45CE-719910E3ABCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C6C057C-94F9-2B6F-AD27-32C04C478534}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C6C057C-94F9-2B6F-AD27-32C04C478534}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C6C057C-94F9-2B6F-AD27-32C04C478534}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C6C057C-94F9-2B6F-AD27-32C04C478534}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F29B7787-35AE-C413-5E25-FE7C2A4DC754}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F29B7787-35AE-C413-5E25-FE7C2A4DC754}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F29B7787-35AE-C413-5E25-FE7C2A4DC754}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F29B7787-35AE-C413-5E25-FE7C2A4DC754}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6083A6BB-987C-AD29-06A8-13E2B7BE5FFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6083A6BB-987C-AD29-06A8-13E2B7BE5FFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6083A6BB-987C-AD29-06A8-13E2B7BE5FFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6083A6BB-987C-AD29-06A8-13E2B7BE5FFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3500C72-864B-2BA3-A5BF-90CE4C4B0E64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3500C72-864B-2BA3-A5BF-90CE4C4B0E64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3500C72-864B-2BA3-A5BF-90CE4C4B0E64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3500C72-864B-2BA3-A5BF-90CE4C4B0E64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42BF9D95-BB99-1C16-EA6A-417C47BA3CF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42BF9D95-BB99-1C16-EA6A-417C47BA3CF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42BF9D95-BB99-1C16-EA6A-417C47BA3CF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42BF9D95-BB99-1C16-EA6A-417C47BA3CF6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE453464-60B9-5B63-63F4-392CB719E86D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE453464-60B9-5B63-63F4-392CB719E86D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE453464-60B9-5B63-63F4-392CB719E86D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE453464-60B9-5B63-63F4-392CB719E86D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{538B63E9-D220-2312-E586-59CB9D46A8E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{538B63E9-D220-2312-E586-59CB9D46A8E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{538B63E9-D220-2312-E586-59CB9D46A8E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{538B63E9-D220-2312-E586-59CB9D46A8E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0E06356-0501-49C4-2D17-28AC97C34ED2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0E06356-0501-49C4-2D17-28AC97C34ED2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0E06356-0501-49C4-2D17-28AC97C34ED2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0E06356-0501-49C4-2D17-28AC97C34ED2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{035187CA-B29F-AB4F-CB8D-E77D37BFB453}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{035187CA-B29F-AB4F-CB8D-E77D37BFB453}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{035187CA-B29F-AB4F-CB8D-E77D37BFB453}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{035187CA-B29F-AB4F-CB8D-E77D37BFB453}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFFC042B-1F94-E910-8AC7-3485835689BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFFC042B-1F94-E910-8AC7-3485835689BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFFC042B-1F94-E910-8AC7-3485835689BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFFC042B-1F94-E910-8AC7-3485835689BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E37C4C8-3D29-088E-CA8A-CA09C800983B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E37C4C8-3D29-088E-CA8A-CA09C800983B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E37C4C8-3D29-088E-CA8A-CA09C800983B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E37C4C8-3D29-088E-CA8A-CA09C800983B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F7091CC-AAD5-41DC-E3A6-3A2150AB60D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F7091CC-AAD5-41DC-E3A6-3A2150AB60D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F7091CC-AAD5-41DC-E3A6-3A2150AB60D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F7091CC-AAD5-41DC-E3A6-3A2150AB60D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDE65EBE-BB98-B4E7-C83C-A9068FDCC1F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDE65EBE-BB98-B4E7-C83C-A9068FDCC1F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDE65EBE-BB98-B4E7-C83C-A9068FDCC1F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDE65EBE-BB98-B4E7-C83C-A9068FDCC1F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57FC7800-4DCB-D817-CA9E-9A1D36332FD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57FC7800-4DCB-D817-CA9E-9A1D36332FD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57FC7800-4DCB-D817-CA9E-9A1D36332FD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57FC7800-4DCB-D817-CA9E-9A1D36332FD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B2CE8AD-D354-F645-6EBE-F2F935DE3A41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B2CE8AD-D354-F645-6EBE-F2F935DE3A41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B2CE8AD-D354-F645-6EBE-F2F935DE3A41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B2CE8AD-D354-F645-6EBE-F2F935DE3A41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F007801F-B0A9-3212-1EE6-E8FDC282B77F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F007801F-B0A9-3212-1EE6-E8FDC282B77F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F007801F-B0A9-3212-1EE6-E8FDC282B77F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F007801F-B0A9-3212-1EE6-E8FDC282B77F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1794F8E-B2CE-BE4A-72C9-CA8E60B157E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1794F8E-B2CE-BE4A-72C9-CA8E60B157E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1794F8E-B2CE-BE4A-72C9-CA8E60B157E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1794F8E-B2CE-BE4A-72C9-CA8E60B157E0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5B8C8073-3745-4434-A0C2-AA08A9594495}
+	EndGlobalSection
+EndGlobal

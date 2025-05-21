@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net9.0</TargetFramework>
+		<Description>Entity Framework layer for the administration of the Asp.Net Core Identity and Duende IdentityServer</Description>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="AutoMapper" Version="14.0.0" />
+		<PackageReference Include="Duende.IdentityServer.EntityFramework" Version="7.2.1" />
+		<PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="9.0.4" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Skoruba.Duende.IdentityServer.Admin.EntityFramework\Skoruba.Duende.IdentityServer.Admin.EntityFramework.csproj" />
+	</ItemGroup>
+
+</Project>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
