@@ -2,6 +2,7 @@
 using ClassifiedAds.Services.Identity.IdentityProviders;
 using ClassifiedAds.Services.Identity.IdentityProviders.Auth0;
 using ClassifiedAds.Services.Identity.IdentityProviders.Azure;
+using ClassifiedAds.Services.Identity.IdentityProviders.IdServer;
 using ClassifiedAds.Services.Identity.Repositories;
 using System;
 using System.Linq;
@@ -32,6 +33,8 @@ public class SyncUsersCommandHandler : ICommandHandler<SyncUsersCommand>
         await SyncToAuth0(command);
 
         await SyncToAzureAdB2C(command);
+
+        await SyncToIdentityServer(command);
     }
 
     private async Task SyncToAzureAdB2C(SyncUsersCommand command)
@@ -95,6 +98,48 @@ public class SyncUsersCommandHandler : ICommandHandler<SyncUsersCommand>
         foreach (var user in users)
         {
             var existingUser = await provider.GetUserByUsernameAsync(user.UserName);
+
+            if (existingUser != null)
+            {
+                user.Auth0UserId = existingUser.Id;
+            }
+            else
+            {
+                var newUser = new User
+                {
+                    Username = user.UserName,
+                    Email = user.Email,
+                    Password = Guid.NewGuid().ToString()
+                };
+
+                await provider.CreateUserAsync(newUser);
+
+                user.Auth0UserId = newUser.Id;
+            }
+
+            await _userRepository.UnitOfWork.SaveChangesAsync();
+        }
+
+        command.SyncedUsersCount += users.Count;
+    }
+
+    private async Task SyncToIdentityServer(SyncUsersCommand command)
+    {
+        var provider = (IdServerProvider)_serviceProvider.GetService(typeof(IdServerProvider));
+
+        if (provider is null)
+        {
+            return;
+        }
+
+        var users = _userRepository.GetQueryableSet()
+            .Where(x => x.Auth0UserId == null)
+            .Take(50)
+            .ToList();
+
+        foreach (var user in users)
+        {
+            var existingUser = await provider.GetUserByUsernameAsync(user.Email);
 
             if (existingUser != null)
             {

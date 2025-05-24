@@ -5,6 +5,7 @@ using ClassifiedAds.Infrastructure.Monitoring;
 using ClassifiedAds.Infrastructure.Notification;
 using ClassifiedAds.Services.Identity.IdentityProviders.Auth0;
 using ClassifiedAds.Services.Identity.IdentityProviders.Azure;
+using ClassifiedAds.Services.Identity.IdentityProviders.IdServer;
 using CryptographyHelper.Certificates;
 
 namespace ClassifiedAds.Services.Identity.ConfigurationOptions;
@@ -69,4 +70,6 @@ public class IdentityProvidersOptions
     public Auth0Options Auth0 { get; set; }
 
     public AzureAdB2COptions AzureActiveDirectoryB2C { get; set; }
+
+    public IdServerOptions IdServer { get; set; }
 }

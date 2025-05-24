@@ -5,6 +5,7 @@ using ClassifiedAds.Services.Identity.Entities;
 using ClassifiedAds.Services.Identity.HostedServices;
 using ClassifiedAds.Services.Identity.IdentityProviders.Auth0;
 using ClassifiedAds.Services.Identity.IdentityProviders.Azure;
+using ClassifiedAds.Services.Identity.IdentityProviders.IdServer;
 using ClassifiedAds.Services.Identity.PasswordValidators;
 using ClassifiedAds.Services.Identity.Repositories;
 using Microsoft.AspNetCore.Builder;
@@ -76,6 +77,11 @@ public static class IdentityModuleServiceCollectionExtensions
             services.AddSingleton(new Auth0IdentityProvider(appSettings.Providers.Auth0));
         }
 
+        if (appSettings.Providers?.IdServer?.Enabled ?? false)
+        {
+            services.AddSingleton(new IdServerProvider(appSettings.Providers.IdServer));
+        }
+
         if (appSettings.Providers?.AzureActiveDirectoryB2C?.Enabled ?? false)
         {
             services.AddSingleton(new AzureActiveDirectoryB2CIdentityProvider(appSettings.Providers.AzureActiveDirectoryB2C));
@@ -135,10 +141,10 @@ public static class IdentityModuleServiceCollectionExtensions
 
     public static void MigrateIdentityDb(this IApplicationBuilder app)
     {
-        using (var serviceScope = app.ApplicationServices.GetService<IServiceScopeFactory>().CreateScope())
-        {
-            serviceScope.ServiceProvider.GetRequiredService<IdentityDbContext>().Database.Migrate();
-        }
+        //using (var serviceScope = app.ApplicationServices.GetService<IServiceScopeFactory>().CreateScope())
+        //{
+        //    serviceScope.ServiceProvider.GetRequiredService<IdentityDbContext>().Database.Migrate();
+        //}
     }
 
     public static IServiceCollection AddHostedServicesIdentityModule(this IServiceCollection services)

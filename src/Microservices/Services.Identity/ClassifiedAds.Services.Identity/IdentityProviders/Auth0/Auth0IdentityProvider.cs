@@ -109,7 +109,7 @@ public class Auth0IdentityProvider : IIdentityProvider
     {
         await SetAccessToken();
 
-        var response = await _httpClient.GetAsync(_options.Audience + $"users-by-email?email={username}");
+        var response = await _httpClient.GetAsync(_options.Audience + $"searchText={username}");
         var responseText = await response.Content.ReadAsStringAsync();
 
         var users = JsonSerializer.Deserialize<List<Auth0User>>(responseText);
